@@ -5,6 +5,7 @@ services:
     restart: always
     volumes:
       - ./data:/UO
+      - /Users/davelens/Applications/UO:/GAME
     network_mode: host
 #    mem_limit: 2048m
 #    ports:
