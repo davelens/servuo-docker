@@ -1,0 +1,12 @@
+services:
+  servuo:
+    build:
+      context: .
+    restart: always
+    volumes:
+      - ./data:/UO
+    network_mode: host
+#    mem_limit: 2048m
+#    ports:
+#    - "2593:2593/tcp"
+    command: make
