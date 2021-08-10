@@ -4,8 +4,12 @@ services:
       context: .
     restart: always
     volumes:
-      - ./data:/UO
-      - ${UO_GAME_DIR}:/GAME
+      - servuo:${CONTAINER_SERVUO_DIR}
+      - game_files:${CONTAINER_SERVUO_DIR}
     ports:
     - "2593:2593"
     command: make
+
+volumes:
+  servuo: {}
+  game_files: {}
