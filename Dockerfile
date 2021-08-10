@@ -7,9 +7,7 @@ RUN apt-get update && apt-get install -y wget && \
     apt-get install -y apt-transport-https && \
     apt-get install -y dotnet-sdk-5.0 zlib1g-dev mono-complete make
 
-ENV CONTAINER_SERVUO_DIR /servuo
-ENV CONTAINER_GAME_FILES_DIR /game_files
-RUN mkdir $CONTAINER_SERVUO_DIR $CONTAINER_GAME_FILES_DIR
-WORKDIR $CONTAINER_SERVUO_DIR
+RUN mkdir /servuo /game_files
+WORKDIR /servuo
 
 EXPOSE 2593
