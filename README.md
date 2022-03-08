@@ -1,6 +1,8 @@
 # servuo-docker
 This repo was made to allow the most recent ServUO iteration (publish 57.1) to run inside a Docker container on a Synology NAS. While that's a very specific usecase, I'm fairly sure *any* platform running this container will be able to get it working.
 
+I mostly made this for my own use case, but just in case you want to fiddle with this, a little explanation below.
+
 ## Install
 1. Build your container
 2. Create/configure your volumes. There's one volume for servuo itself, and one for the UO game files ServUO needs.  
